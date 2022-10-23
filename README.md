@@ -1,1 +1,3 @@
-# game-quiz-react
+# Game Quiz com React + Vite
+
+Projeto em contrução.
