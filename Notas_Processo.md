@@ -1,7 +1,7 @@
 # Diário do Projeto
 
 **Anotações sobre o processo de desenvolvimento do quiz utilizando a biblioteca react.**
-[Repositório dos Arquivos](https://github.com/matheusbattisti/quiz_react)
+[Repositório Fonte](https://github.com/matheusbattisti/quiz_react)
 
 
 ### Documentação
@@ -61,6 +61,13 @@ Trabalhando com o Welcome.css:
 ### Quinta Etapa
 **Progressão das fases do jogo**
 Criando um contexto:
+- Criar a pasta contrext e o arquivo;
+- import o creatContext;
+- Criar provider;
+
+
+### Sexta Etapa
+Mudando o estado da aplicação:
 
 
 

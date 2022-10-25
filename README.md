@@ -1,3 +1,3 @@
 # Game Quiz com React + Vite
 
-Projeto em contrução.
+Atenção! Estamos em obra...
