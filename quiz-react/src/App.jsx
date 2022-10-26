@@ -5,7 +5,7 @@ import { Welcome } from './components/Welcome'
 function App() {
   return (
     <div className="App">
-      <h1>Game Quiz</h1>
+      <h1>Quiz da Programação</h1>
       <Welcome />
     </div>
   )

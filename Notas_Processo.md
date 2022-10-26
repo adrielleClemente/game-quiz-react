@@ -46,6 +46,7 @@ Necessário o npm instalado para começar o projeto.
 
 ### Quarta Etapa
 **Estilização**
+
 Trabalhando com o index.css:
 - Aplicação de altura, largura e cor na página;
 - Fonte branca;
@@ -60,14 +61,20 @@ Trabalhando com o Welcome.css:
 
 ### Quinta Etapa
 **Progressão das fases do jogo**
+
 Criando um contexto:
 - Criar a pasta contrext e o arquivo;
-- import o creatContext;
-- Criar provider;
+- import o creatContext, o contexto é onde será o consumo;
+- Criar provider, onde será o provedor;
 
 
 ### Sexta Etapa
 Mudando o estado da aplicação:
+- import userReducer para mudar o estado;
+- O evento será clicar no botão(Welcome.jsx);
+- Criação da const de estágios do game;
+- A mudança dos *state* será baseada numa *switch*,
+- A const *quizState* pega o valor, enquanto o *dispatch* altera.
 
 
 
