@@ -76,5 +76,10 @@ Mudando o estado da aplicação:
 - A mudança dos *state* será baseada numa *switch*,
 - A const *quizState* pega o valor, enquanto o *dispatch* altera.
 
+### Sétima Etapa
+Exibição da perguntas:
+
+- 
+
 
 
