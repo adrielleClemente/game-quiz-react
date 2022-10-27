@@ -1,14 +1,10 @@
 // react, componentes, estáticos
-import { useContext } from 'react'
-
+import { useContext, useEffect } from 'react'
 import { QuizContext } from './context/quiz';
-
 import Questions from './components/Questions';
-
 import './App.css'
-
-import { Welcome } from './components/Welcome'
-import { useEffect } from 'react';
+import { Welcome } from './components/Welcome';
+import {GameOver} from './components/GameOver';
 
 function App() {
   const [quizState, dispatch] = useContext(QuizContext);
@@ -26,7 +22,7 @@ function App() {
       <h1>Quiz da Programação</h1>
       {quizState.gameStage === "Start" && <Welcome/>}
       {quizState.gameStage === "Playing" && <Questions/>}
-      <Welcome />
+      {quizState.gameStage === "End" && <GameOver/>}
     </div>
   )
 }

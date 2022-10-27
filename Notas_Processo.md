@@ -81,5 +81,7 @@ Exibição da perguntas:
 
 - 
 
+**Obs:** Parei na criação dos componente de GameOver. Tem alguma coisa dando errado.
+
 
 
