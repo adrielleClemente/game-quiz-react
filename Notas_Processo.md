@@ -81,7 +81,7 @@ Exibição da perguntas:
 
 - 
 
-**Obs:** Parei na criação dos componente de GameOver. Tem alguma coisa dando errado.
-
+**26/10/2022** - Parei na criação dos componente de GameOver. Tem alguma coisa dando errado.
+**27/10/1022** - Resolvi o problema com o arquivo GameOver. Agora o botão da opção não está ficando verde quando acerta.
 
 

@@ -2,15 +2,19 @@ import { createContext, useReducer } from "react";
 
 import questions from '../data/questions'
 
-const STAGES = ["Start", "Playing", "End"]
+const STAGES = ["Start", "Playing", "End"]; 
 
 const initialStage ={
     gameStage: STAGES[0],
     questions,
     currentQuestion: 0,
+    score: 0,   
+    answerSelected: false,
 }
 
 const quizReducer = (state,action) => {
+
+
     switch(action.type){
         case "CHANGE_STATE":
             return {
@@ -23,8 +27,7 @@ const quizReducer = (state,action) => {
                 return Math.random() - 0.5;
             });
 
-        
-            console.log('Embaralhou');
+            //console.log('Embaralhou');
             return {
                 ...state,
                 questions: reorderedQuestions,
@@ -32,7 +35,7 @@ const quizReducer = (state,action) => {
 
         case "CHANGE_QUESTION":
             const nexQuestion = state.currentQuestion + 1;
-            let endGame = false
+            let endGame = false;
 
             if(!questions[nexQuestion]){
                 endGame = true
@@ -42,13 +45,35 @@ const quizReducer = (state,action) => {
             return{
                 ...state,
                 currentQuestion: nexQuestion,
-                gameStage: endGame ? STAGE[2] : state.gameStage,
+                gameStage: endGame ? STAGES[2] : state.gameStage,
+                answerSelected: false,
             };
+            
+        case "NEW_GAME":
+            return initialStage;
+
+
+        case "CHECK_ANSWER":
+            if(state.answerSelected) return state;
+            
+
+
+            const answer = action.payload.answer
+            const option = action.payload.option
+            let correctAnswer = 0
+
+            if(answer === option) correctAnswer = 1;
+
+            return{
+                ...state,
+                score: state.score + correctAnswer,
+                answerSelected: option,
+            }
 
         default:
             return state;
     }
-}
+};
 
 export const QuizContext = createContext()
 

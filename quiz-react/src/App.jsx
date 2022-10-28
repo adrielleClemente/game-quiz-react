@@ -3,8 +3,8 @@ import { useContext, useEffect } from 'react'
 import { QuizContext } from './context/quiz';
 import Questions from './components/Questions';
 import './App.css'
-import { Welcome } from './components/Welcome';
-import {GameOver} from './components/GameOver';
+import Welcome from './components/Welcome';
+import GameOver from './components/GameOver';
 
 function App() {
   const [quizState, dispatch] = useContext(QuizContext);
@@ -19,12 +19,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Quiz da Programação</h1>
+      <h1>Quiz da Horror</h1>
       {quizState.gameStage === "Start" && <Welcome/>}
       {quizState.gameStage === "Playing" && <Questions/>}
       {quizState.gameStage === "End" && <GameOver/>}
     </div>
-  )
+  );
 }
 
 export default App

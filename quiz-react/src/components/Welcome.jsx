@@ -4,7 +4,7 @@ import { QuizContext } from '../context/quiz';
 
 import "./Welcome.css";
 
-export const Welcome = () => {
+const Welcome = () => {
   const [quizState, dispatch] = useContext(QuizContext);
 
 
@@ -16,6 +16,8 @@ export const Welcome = () => {
         <img src={Quiz} alt="Início do quiz"/>
     </div>
   )
-}
+};
+
+export default Welcome;
 
 
