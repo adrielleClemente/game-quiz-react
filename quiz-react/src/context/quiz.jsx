@@ -58,8 +58,8 @@ const quizReducer = (state,action) => {
             
 
 
-            const answer = action.payload.answer
-            const option = action.payload.option
+            const answer = action.payload.answer;
+            const option = action.payload.option;
             let correctAnswer = 0
 
             if(answer === option) correctAnswer = 1;

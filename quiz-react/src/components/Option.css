@@ -17,10 +17,10 @@
 }
 
 .correct{
-    background-color: #0bfc03;
+    background-color: forestgreen;
     font-weight: bold;
 }
-.wrong{
+/* .wrong{
     background-color: red;
     opacity: 0.4;
-}
+} */

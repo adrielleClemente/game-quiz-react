@@ -81,7 +81,9 @@ Exibição da perguntas:
 
 - 
 
-**26/10/2022** - Parei na criação dos componente de GameOver. Tem alguma coisa dando errado.
-**27/10/1022** - Resolvi o problema com o arquivo GameOver. Agora o botão da opção não está ficando verde quando acerta.
+**27/10/2022** - Parei na criação dos componente de GameOver. Tem alguma coisa dando errado.
+**28/10/2022** - Resolvi o problema com o arquivo GameOver. Agora o botão da opção não está ficando verde quando acerta.
+**29/10/2022** - O problema persiste. Quando igualo a option e quizState.answerSelected com answer dá errado, agora quando diferencio dá certo. Po algum motivo só lê a className "wrong" e não a "correct"
+
 
 
